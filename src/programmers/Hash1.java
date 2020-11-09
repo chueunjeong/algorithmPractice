@@ -39,7 +39,7 @@ public class Hash1 {
 		String[] participant2= {"mislav", "stanko", "mislav", "ana"};
 		String[] completion2= {"stanko", "ana", "mislav"};
 		String answer2 =solution(participant2,completion2);
-		System.out.println("answer1="+answer2);
+		System.out.println("answer2="+answer2);
 	}
 
 }
