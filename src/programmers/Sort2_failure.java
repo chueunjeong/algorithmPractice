@@ -12,6 +12,10 @@ public class Sort2_failure {
 					 arr[i]=String.valueOf(numbers[i]);
 				 }
 		        //문자열의 길이로 비교하고 같다면 내림차순으로 정렬
+//		        Collections.sort(list, (a, b) -> {
+//		            String as = String.valueOf(a), bs = String.valueOf(b);
+//		            return -Integer.compare(Integer.parseInt(as + bs), Integer.parseInt(bs + as));
+//		        });
 		        Arrays.sort(arr,new Comparator<String>(){
 		    		public int compare(String s1, String s2){
 		    			int r = Integer.compare(s1.length(), s2.length());
