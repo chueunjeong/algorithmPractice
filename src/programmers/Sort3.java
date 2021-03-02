@@ -15,6 +15,7 @@ public class Sort3 {
 	                if(i>=h) q++;
 	                if(i<=h) n++;                
 	            }
+	            System.out.println(h+"/"+q+"/"+n+"/");
 	            if(q<h) break;
 	            answer=h;	            
 	        }
@@ -32,7 +33,7 @@ public class Sort3 {
 		System.out.println("answer2=3"+answer2);
 		int[] numbers3 = {4,4,4};		
 		int answer3 = solution(numbers3);
-		System.out.println("answer3=4"+answer3);
+		System.out.println("answer3=3"+answer3);
 		
 
 	}
