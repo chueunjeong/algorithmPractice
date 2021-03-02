@@ -21,18 +21,23 @@ public class Greedy01 {
 			else {
 				answer += arr[0];
 				k_count++;
-			}
-			
-		}
-		
+			}			
+		}		
 		return answer;
 	}
-	
+	public static int solution2(int n, int m, int k, int[] numbers) {
+		//더하는 게 일정한 규칙이 있으므로 
+		//6+6+6+5 + 6+6+6+5
+		//규칙 크기만큼이면 그 몫만큼 곱하고 나머지가 있다면 나머지는 제일 큰 수를 곱해 더한다.
+		Arrays.sort(numbers);
+		int answer = (m/(k+1))*(numbers[n-1]*k+numbers[n-2])+(m%(k+1))*numbers[n-1];
+		return answer;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr1= {2,4,5,4,6};
-		int answer1 =solution(5,8,3,arr1);
+		int answer1 =solution2(5,8,3,arr1);
 		System.out.println("answer1="+answer1);
 		int[] arr2= {3,4,3,4,3};
 		int answer2 =solution(5,7,2,arr2);
