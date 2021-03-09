@@ -1,4 +1,4 @@
-package CodingTest;
+package codingTest;
 import java.util.*;
 
 public class Greedy01 {
