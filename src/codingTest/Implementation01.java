@@ -11,6 +11,7 @@ public class Implementation01 {
 		}
 		return position[0]+" "+position[1];
 	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		char[] arr1= {'R','R','R','U','D','D'};
