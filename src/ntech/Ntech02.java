@@ -3,6 +3,7 @@ import java.util.*;
 
 public class Ntech02 {
 	public static int solution(int n) {
+		//다이나믹 프로그래밍으로 풀어본 직사각형 테이블에 윗변과 아래변에 N명이 앉아 총 2*N명이 앉을경우 모두 동시에 악수 하는 경우의 수
 		int[] ways = new int[45];
 		
 		ways[0]=1;
