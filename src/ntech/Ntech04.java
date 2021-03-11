@@ -3,7 +3,9 @@ import java.util.*;
 
 public class Ntech04 {
 	public static int solution(int[][] t1,int[][] t2) {		
-		int answer=0;		
+		int answer=0;
+		//각 점마다 돌아서 해당 점이 루트가 되어서 주어진 부분 트리 모양과 일치하는지 확인하고
+		//같다면 answer++
 		for(int i=0;i<t1.length;i++) {				
 			boolean tf=check(t1,t2,i,0);
 			if(tf) answer++;
